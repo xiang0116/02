@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QuickPrice 快比</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; background: #f5f5f5; }
+    h1 { color: #333; }
+    input, button { padding: 10px; font-size: 16px; }
+    .results { margin-top: 20px; }
+    .product { background: white; padding: 10px; margin-bottom: 10px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    img { width: 100px; }
+    .lang-switch { margin-top: 10px; cursor: pointer; color: blue; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1 id="title">QuickPrice 快比</h1>
+  <input type="text" id="searchInput" placeholder="輸入商品名稱">
+  <button onclick="search()">搜尋</button>
+  <div class="lang-switch" onclick="switchLang()">切換語言 / Switch Language</div>
+  <div class="results" id="results"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
